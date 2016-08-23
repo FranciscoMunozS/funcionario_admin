@@ -96,7 +96,7 @@ if($this->input->post()){
 
       <div class="form-group">
         <label for="userfile">Imagen</label>
-        <div class="row" style="margin-bottom:5px"><div class="col-xs-12 col-sm-6 col-md-3"><?=img(['src'=>$image->image,'width'=>'25%'])?></div></div>
+        <div class="row" style="margin-bottom:5px"><div class="col-xs-12 col-sm-6 col-md-3"><?=img(['src'=>$image->file,'width'=>'25%'])?></div></div>
         <input type="file" class="form-control" name="userfile">
       </div>
 

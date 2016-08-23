@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <?php foreach($images->result() as $img) : ?>
             <div class="col-md-3" align="center">
                <div class="thumbnail">
-                  <?=img($img->image)?>
+                  <?=img($img->file)?>
                   <div class="caption">
                      <h3><?=$img->nombre?></h3>
                      <p>
