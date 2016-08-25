@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                <div class="thumbnail">
                   <?=img($img->file)?>
                   <div class="caption">
-                     <h3><?=$img->nombre?></h3>
+                     <h4><?=$img->nombre?></h4>
                      <p>
                         <?=anchor('employee/edit/'.$img->id,'Editar',['class'=>'btn btn-warning', 'role'=>'button'])?>
                         <?=anchor('employee/delete/'.$img->id,'Eliminar',['class'=>'btn btn-danger', 'role'=>'button','onclick'=>'return confirm(\'Esta seguro?\')'])?>
@@ -107,5 +107,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
    <p class="footer">Pagina renderizada en <strong>{elapsed_time}</strong> segundos. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>

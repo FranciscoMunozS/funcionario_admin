@@ -64,7 +64,7 @@ class Employee extends CI_Controller {
       $file = $this->upload->data();
       $data = [
                 'nombre' => set_value('nombre'),
-                'image' => 'uploads/' . $file['file_name'],
+                'file' => 'uploads/' . $file['file_name'],
                 'division' => set_value('division'),
                 'unidad' => set_value('unidad'),
                 'email' => set_value('email'),
@@ -113,7 +113,7 @@ class Employee extends CI_Controller {
       if(isset($_FILES["userfile"]["name"])) {
         $config = [
                     'upload_path' => './uploads/',
-                    'allowed_types' => 'gif|jpg|png',
+                    'allowed_types' => 'gif|jpg|png|jpeg|JPG',
                     'max_size' => 100,
                     'max_width' => 1024,
                     'max_height' => 768
